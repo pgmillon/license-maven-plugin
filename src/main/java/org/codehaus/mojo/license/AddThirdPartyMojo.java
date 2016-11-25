@@ -259,7 +259,7 @@ public class AddThirdPartyMojo
 
             // there is no missing dependencies, but still a missing file, delete it
             getLog().info( "There is no dependency to put in missing file, delete it at " + getMissingFile() );
-            FileUtil.deleteFile( getMissingFile() );
+//            FileUtil.deleteFile( getMissingFile() );
         }
 
         if ( !unsafe && deployMissingFile && MapUtils.isNotEmpty( getUnsafeMappings() ) )
